@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-$main-bg: url(/images/bg.jpg);
+$main-bg: url(/images/bg.jpg)no-repeat center center;
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -28,6 +28,7 @@ $on-laptop:        800px;
 
 main {
   background: $main-bg;
+  min-height: 400px;
 }
 
 @mixin media-query($device) {
@@ -43,5 +44,6 @@ main {
         "base",
         "layout",
         "syntax-highlighting",
-        "0-plugins/plugins"
+        "0-plugins/plugins",
+        "1-modules/modules"
 ;
