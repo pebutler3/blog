@@ -1,4 +1,6 @@
 # Site settings
+gems:
+  - jekyll-redirect-from
 title: Manly Vegetarian
 email: p.e.butler3@gmail.com
 description: > # this means to ignore newlines until "baseurl:"

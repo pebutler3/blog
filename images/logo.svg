@@ -17,7 +17,7 @@
                     <mask id="mask-2" sketch:name="Mask" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>
-                    <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use id="Mask" fill="#9BC1BC" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
                 </g>
                 <g id="Vegetarian" transform="translate(138.000000, 1.000000)" fill="#000000">
                     <text sketch:type="MSTextLayer" transform="translate(95.000000, 51.000000) rotate(-18.000000) translate(-95.000000, -51.000000) " font-family="Nickainley" font-size="48" font-weight="normal">
