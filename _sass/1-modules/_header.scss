@@ -1,0 +1,29 @@
+$row-width: 100%;
+
+header {
+    @include grid-row;
+    min-height: 56px;
+    padding: 1em 0;
+    background: tint($blue, 10%);
+    img {
+        @media #{$medium-up} {
+          @include grid-column(4);
+        }
+    }
+    nav {
+        @include grid-column(8);
+        @include margin(1.5em 0 0 0);
+        text-align: center;
+        @media #{$small-only} {
+          @include grid-column(12);
+          text-align: left;
+        }
+        a {
+            @include padding(.5em 1em);
+            color: tint($yellow, 40%);
+            font-size: 1.5em;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
