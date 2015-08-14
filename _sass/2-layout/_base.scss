@@ -50,17 +50,3 @@ body {
 a {
   text-decoration: none;
 }
-section.recent-posts {
-  a {
-    color: $purple;
-    h2 {
-     display: inline;
-     background: darken($white, 5%);
-     &:hover { border-bottom: 1px solid $purple; }
-     &:before {
-       content: ' • ';
-       padding-left: .2em;
-     }
-    }
-  }
-}

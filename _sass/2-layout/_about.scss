@@ -1,6 +1,6 @@
 main {
   @include grid-row;
-  article div.welcome {
+  article div.about {
     @include grid-column(10 , $center: true);
     h1 {
      font-weight: 400;

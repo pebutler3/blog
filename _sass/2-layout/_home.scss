@@ -1,7 +1,7 @@
 // $row-width: 100%;
 main {
   @include grid-row;
-  article div.about {
+  article div.welcome {
     @include grid-column(10 , $center: true);
     h1 {
      font-weight: 400;
@@ -12,5 +12,22 @@ main {
     @include grid-column(4);
     @include panel($bg: $blue);
     border: 0;
+  }
+}
+section.recent-posts {
+  a {
+    color: $purple;
+    h2 {
+     display: inline;
+     background: darken($white, 7%);
+     border-left: 2px solid;
+     &:hover {
+      background: darken($white, 9%);
+     }
+     &:before {
+       content: ' • ';
+       padding-left: .2em;
+     }
+    }
   }
 }
