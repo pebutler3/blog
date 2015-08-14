@@ -1,9 +1,16 @@
-$bg-image: url(../images/bg.jpg) no-repeat center center;
-$bg-size: cover;
-
-$row-width: 100%;
-body {
-  @include grid-row();
-  background: $bg-image;
-  background-size: $bg-size;
+// $row-width: 100%;
+main {
+  @include grid-row;
+  article div.about {
+    @include grid-column(10 , $center: true);
+    h1 {
+     font-weight: 400;
+     font-size: 2em;
+    }
+  }
+  aside {
+    @include grid-column(4);
+    @include panel($bg: $blue);
+    border: 0;
+  }
 }

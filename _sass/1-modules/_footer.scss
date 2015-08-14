@@ -1,0 +1,13 @@
+$row-width: 100%;
+footer {
+  @include grid-column(12);
+  background: $blue;
+  color: $white;
+  h2 {
+   font-weight: 200;
+  }
+  a {
+    letter-spacing: 1px;
+    color: $white;
+  }
+}

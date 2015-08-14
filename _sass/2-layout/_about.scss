@@ -1,0 +1,15 @@
+main {
+  @include grid-row;
+  article div.welcome {
+    @include grid-column(10 , $center: true);
+    h1 {
+     font-weight: 400;
+     font-size: 2em;
+    }
+  }
+  aside {
+    @include grid-column(4);
+    @include panel($bg: $blue);
+    border: 0;
+  }
+}

@@ -1,0 +1,66 @@
+body {
+  color: $blue;
+  font-weight: 200;
+  h1,h2{
+    font-weight: 200;
+    letter-spacing: 5px;
+  }
+  h3 {
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  hr {
+    margin-top: 10px;
+    border-color: tint($blue, 80%);
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+  }
+  main {
+    @include grid-row;
+    min-height: 500px;
+    article {
+      @include grid-column(8, $center: true);
+      img.banner {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        border-top: 5px solid $blue;
+        border-bottom: 2px solid $blue;
+      }
+      .post-title {
+        @include margin(1em 0 0 0);
+        @include padding(0 0 0 .2em);
+        font-size: 3em;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .post-subtitle {
+        color: $blue;
+        margin-top: 0;
+        @include padding(0 0 0 .5em);
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+section.recent-posts {
+  a {
+    color: $purple;
+    h2 {
+     display: inline;
+     background: darken($white, 5%);
+     &:hover { border-bottom: 1px solid $purple; }
+     &:before {
+       content: ' • ';
+       padding-left: .2em;
+     }
+    }
+  }
+}

@@ -3,19 +3,34 @@ layout: default
 title: Welcome
 permalink: /
 ---
-
-<div class="home">
- <h1>Welcome!</h1>
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+<main>
+ <article>
+  <div class="welcome">
+   <h1>Welcome!</h1>
+   <p>{{ site.welcome }}</p>
+   <hr>
+   <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    {% for post in site.posts | limit: 3 %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+    <h2>{{ post.title }}</h2></a>
+    <!-- {{ post.date | date: "%b %&#45;d, %Y" }} -->
+    <!-- {{ post.content }} -->
     {% endfor %}
-  </ul>
-  <!-- <p class="rss&#45;subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-</div>
+   </section>
+  </div>
+  <!-- <aside> -->
+  <!--  <h2>Recent Posts</h2> -->
+  <!--   <ul> -->
+  <!--     {% for post in site.posts %} -->
+  <!--       <li> -->
+  <!--         <span>{{ post.date | date: "%b %&#45;d, %Y" }}</span> -->
+  <!--         <h2> -->
+  <!--           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+  <!--         </h2> -->
+  <!--       </li> -->
+  <!--     {% endfor %} -->
+  <!--   </ul> -->
+  <!-- </aside> -->
+ </article>
+</main>

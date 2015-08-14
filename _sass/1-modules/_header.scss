@@ -1,18 +1,25 @@
+$bg-image: url(../images/bg.jpg) no-repeat center center;
+$bg-size: cover;
 $row-width: 100%;
 
 header {
     @include grid-row;
     min-height: 56px;
     padding: 1em 0;
-    background: tint($blue, 10%);
+    background: $bg-image;
+    background-size: $bg-size;
+    // background-color: rgba(30, 44, 66, .50);
     img {
         @media #{$medium-up} {
-          @include grid-column(4);
+          @include grid-column(12);
+          height: 150px;
         }
     }
     nav {
-        @include grid-column(8);
-        @include margin(1.5em 0 0 0);
+        @include grid-column(12);
+        @include margin(1.5em 0 -1em 0);
+        background: $blue;
+        border-bottom: 1px solid tint($blue, 20%);
         text-align: center;
         @media #{$small-only} {
           @include grid-column(12);
@@ -20,10 +27,14 @@ header {
         }
         a {
             @include padding(.5em 1em);
-            color: tint($yellow, 40%);
+            color: $white;
             font-size: 1.5em;
             text-align: center;
             text-decoration: none;
+            &:after {
+             content: ' \002301';
+             color: $yellow;
+            }
         }
     }
 }

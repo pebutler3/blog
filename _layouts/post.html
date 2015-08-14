@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div>
+  <article>
+
+   <h1 class="post-title">{{ page.title }}</h1>
+   <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+   <h3>{{ page.date | date: "%b %-d, %Y" }}</h3>
+
+   <p>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+   <img class="banner" src="{{ page.banner }}" alt="">
+
+   <h3>Ingredients</h3>
+    <ul>
+    {% for ingredient in page.ingredients %}
+      <li>{{ ingredient }}</li>
+    {% endfor %}
+    </ul>
+
+    {{ content }}
+
+  </article>
+</div>
