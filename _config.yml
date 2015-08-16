@@ -12,5 +12,6 @@ url: "http://manlyvegetarian.gq"
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 contact:
   email: "themanlyveg@gmail.com"
