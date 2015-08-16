@@ -1,0 +1,12 @@
+---
+layout: default
+category: recipes
+---
+<article>
+ <h1>Recipes</h1>
+ <ul>
+  {% for recipe in site.posts %}
+  <li><a href="{{ recipe.url | prepend: site.baseurl }}">{{ recipe.title }}</a></li>
+  {% endfor %}
+ </ul>
+</article>
