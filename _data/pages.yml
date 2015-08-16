@@ -4,3 +4,6 @@
 - url: /about/
   title: About
   group: Nav
+- url: /recipes/
+  title: Recipes
+  group: Nav
