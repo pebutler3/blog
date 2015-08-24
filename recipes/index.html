@@ -5,7 +5,7 @@ category: recipes
 <article>
  <h1>Recipes</h1>
  <ul>
-  {% for recipe in site.posts %}
+  {% for recipe in site.categories.recipes %}
   <li><a href="{{ recipe.url | prepend: site.baseurl }}">{{ recipe.title }}</a></li>
   {% endfor %}
  </ul>
