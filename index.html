@@ -10,7 +10,7 @@ title: Welcome
    <hr>
    <section class="recent-posts">
     <h2>Recent Posts</h2>
-    {% for post in site.posts | limit: 3 %}
+    {% for post in site.categories.recipes | limit: 3 %}
     <a href="{{ post.url | prepend: site.baseurl }}">
     <h2>{{ post.title }}</h2></a>
     <!-- {{ post.date | date: "%b %&#45;d, %Y" }} -->
