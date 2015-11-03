@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Welcome
+published: true
 ---
+
 <main>
  <article>
   <div class="welcome">
    <h1>Welcome!</h1>
    <p>{{ site.welcome }}</p>
    <hr>
+   test
    <section class="recent-posts">
     <h2>Recent Posts</h2>
     {% for post in site.categories.recipes | limit: 3 %}
